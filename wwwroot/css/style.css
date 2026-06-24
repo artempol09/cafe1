@@ -1,0 +1,61 @@
+﻿body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #fff5f5;
+    color: #333;
+}
+
+header {
+    background-color: #d4a373;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    /* Добавим небольшую тень, чтобы отделить от контента */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    /* Чтобы раздел "О нас" чуть опустился от шапки */
+    padding-top: 20px;
+    /* Чтобы подвал не наезжал на контакты */
+    padding-bottom: 40px;
+}
+
+section {
+    /* Добавим отступы между секциями для удобного скролла */
+    margin-bottom: 60px;
+    scroll-margin-top: 20px; /* Чтобы при клике на ссылку, блок не прилипал к самому верху */
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu li {
+    background: #fff;
+    padding: 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    /* Убираем position: fixed, теперь подвал будет в самом конце страницы */
+    position: relative;
+    width: 100%;
+}
